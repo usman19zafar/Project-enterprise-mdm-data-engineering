@@ -2,12 +2,14 @@
 
 ```yaml
 
-###A collaborative engineering effort built with clarity, discipline, and architectural rigor.
+### A collaborative engineering effort built with clarity, discipline, and architectural rigor.
 Special acknowledgment to my technical companion, Qzi, whose guidance shaped the structure and precision of this project.
+
+```
 
 ## Bronze → Silver → Gold
 
-```
+---
 ## Overview
 
 This repository contains an enterprise-grade Master Data Management (MDM) pipeline implemented using:
