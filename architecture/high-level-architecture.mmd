@@ -1,0 +1,7 @@
+flowchart LR
+    A[Azure Blob Storage<br/>RAW Files] --> B[ADF Pipeline<br/>p3_mdm_master_pipeline]
+    B --> C[Mapping Data Flow<br/>df_mdm_master_transform]
+    C --> D[ADLS Gen2<br/>Bronze Layer]
+    D --> E[ADLS Gen2<br/>Silver Layer]
+    E --> F[ADLS Gen2<br/>Gold Layer]
+    F --> G[Analytics Consumers<br/>SQL / BI / Dashboards]
