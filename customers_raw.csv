@@ -1,0 +1,51 @@
+CustomerID,FirstName,LastName,Email,Phone,City,State,SignupDate
+1,Andrew,Smith,,5486653565,Nicholasland,MP,10/4/2024
+2,Ruth,Walsh,mary50@example.net,001-898-507-5175x609,Port Antonio,IA,3/14/2023
+3,Sabrina,Bell,,,Jacobhaven,PW,9/28/2024
+4,Andrea,GOODMAN,james26@example.org,001-299-652-7491x48125,New Cody,KS,12/15/2023
+5,Michael,Ware,garyreed@example.org,603.323.8518,North Laurafort,MA,11/26/2023
+6,William,Johnson,hmorgan@example.org,524.442.0451x8773,Shelialand,AK,5/17/2025
+7,Kathleen,Wang,susanatkins@example.org,341-996-6536x2141,Lake Johnton,GU,11/18/2025
+8,Larry,Burgess,,+1-514-964-5268x34817,East Angela,DE,10/31/2025
+9,Scott,Dean,,4205109865,Brownland,PA,4/3/2023
+10, Mathew,WEBER,heidi15@example.net,,Burkebury,RI,9/15/2023
+11,Kurt,Mcclain,dfields@example.com,+1-215-236-2572x88563,Port Catherine,AS,5/15/2023
+12,Lisa,Yang,,288.344.5426x65607,Amyland,AL,11/11/2023
+13,Leslie,PIERCE,jennifer30@example.net,,Costaland,DE,6/6/2023
+14,John,Shaw,,658-905-0143x302,Henrybury,RI,9/2/2023
+15,Joseph,Randall,shellyarmstrong@example.org,560-657-0451x7072,Jacksonmouth,MA,6/11/2025
+16,Karen,Johnson,james75@example.net,(299)294-2218x67000,Cainfurt,MI,11/7/2023
+17,Rebecca,Rivas,,4446033438,Danielsshire,WY,6/26/2025
+18,Lindsey,Jones,rivaschristopher@example.net,+1-285-714-6066x0496,East Angelland,NM,9/22/2023
+19,Michael,Shepard,,475-375-5595x90668,Leslieberg,MS,4/9/2024
+20,Travis,Wilcox,solisroberto@example.org,228.431.0771,Lake James,PR,9/1/2025
+21,Jack,Jefferson,loweamanda@example.com,377-991-7661x149,Whitefort,NC,5/7/2025
+22,William,Ward,emily21@example.com,409-203-6799x17970,North Denise,WI,10/21/2024
+23,Joshua,Martinez,mrodriguez@example.com,001-299-719-7335x4725,Erikmouth,NV,6/26/2025
+24,Jacob,Lara,okerr@example.net,(200)688-3961,West Mark,SD,5/24/2023
+25,Shannon,Carlson,amanda19@example.net,249.618.4405,Rodriguezburgh,IL,1/14/2024
+26, Corey,Anderson,michaelfleming@example.org,,New Linda,VT,6/13/2024
+27,John,Freeman,bballard@example.com,951.774.4297x335,North Elizabethfurt,TX,3/21/2025
+28,Richard,Cooley,fbrennan@example.net,+1-694-370-3873x3452,Williamborough,WY,3/28/2025
+29,Henry,WHITE,nbrown@example.org,730.585.7316x201,Edwinbury,KS,10/20/2025
+30,Robert,Nichols,rmonroe@example.org,957.203.6108,Staceyview,IA,7/5/2023
+31,Michael,Brown,zross@example.org,760.987.4351x883,East James,RI,1/8/2025
+32, Andrew,Johnson,xramos@example.org,800-702-4272,Burchfort,NE,11/7/2025
+33, Allen,Powers,hgordon@example.net,(594)991-6177,Garciachester,ND,4/27/2024
+34,Brianna,Campbell,cartertimothy@example.com,+1-328-432-8809x91424,North John,MA,7/14/2024
+35, Sharon,Beasley,lgreene@example.org,(858)304-6645,Ronaldport,DE,12/11/2025
+36, Mike,Gregory,robertlopez@example.org,493.701.5036x153,South Lisatown,MI,1/19/2024
+37,Molly,Nguyen,brittney05@example.com,,Katieborough,DC,2/7/2025
+38,Austin,Villarreal,,467-817-4874x8834,South Erica,OK,5/12/2023
+39,Anthony,Bryant,nmorris@example.com,909.412.4076x6960,Danielsview,AR,1/11/2024
+40, Robin,Johnson,adamarmstrong@example.net,001-627-229-5740x42962,Butlerstad,OK,5/11/2023
+41,Andrew,Cuevas,barnesmichelle@example.net,+1-970-255-0314x27875,Sullivanstad,AR,8/4/2025
+42,Ruben,Christensen,dustin24@example.com,+1-813-916-9970x268,North Julie,SC,12/21/2025
+43,Anna,Williams,barnettjane@example.org,5664242517,North Teresachester,GA,11/27/2023
+44,Lawrence,JOHNSON,james97@example.org,9466626919,Smithport,MH,7/25/2023
+45,Stephen,Montgomery,stevenalvarez@example.com,+1-418-494-4834x5350,Richardsonburgh,AK,6/13/2024
+46,Andrew,Schmidt,bboyer@example.net,,Frankville,ND,4/6/2023
+47,Rebecca,Sanders,jflores@example.net,337.766.3367,East Angelaton,GA,6/18/2025
+48,Kristen,Collier,kathleenhuber@example.net,(757)447-9109x328,South Kimberly,WY,3/26/2023
+49,Emily,Maynard,timbass@example.org,,Lake Brianborough,VT,10/22/2025
+50,Erika,NEAL,vbaird@example.org,,East Maryview,WI,2/19/2023
