@@ -1,0 +1,26 @@
+flowchart LR
+    subgraph RAW Sources
+        CUST[src_customer<br/>Customers.csv]
+        PROD[src_product<br/>Products.csv]
+        ORD[src_orders<br/>Orders.csv]
+    end
+
+    CUST --> SC[Standardize & Cleanse]
+    PROD --> SC
+    ORD --> SC
+
+    SC --> FLT[Filter Invalid Rows]
+
+    FLT --> DEDUPE[Deduplicate<br/>Window Function]
+
+    DEDUPE --> DERIVED[Derived Columns<br/>total_amount, dates, metrics]
+
+    subgraph CLEAN Outputs
+        S1[sink_customer_clean]
+        S2[sink_product_clean]
+        S3[sink_orders_clean]
+    end
+
+    DERIVED --> S1
+    DERIVED --> S2
+    DERIVED --> S3
