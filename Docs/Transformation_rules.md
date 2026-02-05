@@ -43,3 +43,38 @@ This document describes the exact transformations applied in each layer of the M
 
 ### 2.5 Deduplication
 - Apply window function:
+
+ROW_NUMBER() OVER (PARTITION BY business_key ORDER BY last_updated DESC
+
+- Keep only `row_number = 1`.
+
+---
+
+## 3. Gold Layer Transformations
+
+### 3.1 Customer Dimension
+- Aggregate orders to compute:
+- total_revenue
+- total_quantity
+- order_count
+- avg_order_value
+
+### 3.2 Product Dimension
+- Standardize product attributes.
+- Compute product-level metrics if required.
+
+### 3.3 Fact Orders
+- Join Silver Orders with Silver Customers and Silver Products.
+- Produce star-schema fact table.
+
+### 3.4 Order Metrics Table
+- Use window functions:
+- `LAG(total_amount)` to compute previous order value
+- `RANK()` for customer ranking
+- Produce analytics-ready metrics.
+
+---
+
+## 4. Output Format
+- All outputs stored as Delta-compatible files.
+- Partitioning by `load_date` where applicable.
