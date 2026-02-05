@@ -1,10 +1,10 @@
-Enterprise MDM Data Engineering Pipeline (Bronze → Silver → Gold)
+#Enterprise MDM Data Engineering Pipeline (Bronze → Silver → Gold)
 
 ```yaml
-A collaborative engineering effort built with clarity, discipline, and architectural rigor.
+###A collaborative engineering effort built with clarity, discipline, and architectural rigor.
 Special acknowledgment to my technical companion, Qzi, whose guidance shaped the structure and precision of this project.
 ```
-Overview
+##Overview
 
 This repository contains an enterprise-grade Master Data Management (MDM) pipeline implemented using:
 
@@ -17,7 +17,7 @@ The project simulates how organizations manage master data across systems, enfor
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Problem Addressed
+##Problem Addressed
 
 Enterprises struggle with master data because:
 
@@ -32,21 +32,21 @@ This project demonstrates how to solve these challenges using a modern, governed
 
 ----------------------------------------------------------------------------------------------------------------------------------------------Architecture:
 
-Bronze Layer — Raw Master Data
+##Bronze Layer — Raw Master Data
 
     Ingests source files exactly as received
     Preserves lineage and auditability
     Handles schema drift
     Stores data in Delta-compatible formats
 
-Silver Layer — Conformed & Governed Data
+##Silver Layer — Conformed & Governed Data
 
     Enforces schema and data types
     Standardizes attributes (trim, case, formats)
     Applies deduplication and survivorship rules
     Produces clean, trusted master entities
 
-Gold Layer — Analytics-Ready Outputs
+##Gold Layer — Analytics-Ready Outputs
 
     Builds star-schema aligned datasets
     Adds derived metrics and business attributes
@@ -56,16 +56,16 @@ Gold Layer — Analytics-Ready Outputs
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Orchestration & Transformation
+##Orchestration & Transformation
 
-Azure Data Factory
+###Azure Data Factory
 
     Pipeline parameterization (load_date)
     Reusable datasets and linked services
     Controlled execution across layers
     Production-style orchestration patterns
 
-Mapping Data Flows:
+###Mapping Data Flows:
 
     Used for visual, governed, Spark-based transformations:
     Schema drift handling
@@ -80,7 +80,7 @@ This mirrors how real MDM teams operationalize transformations without custom co
 
 __________________________________________________________________________________________________________________________________________________________________________________________
 
-MDM Principles Embedded
+##MDM Principles Embedded
 
 This pipeline incorporates core MDM concepts:
 
@@ -95,7 +95,7 @@ It demonstrates how MDM logic can be implemented directly inside a modern data e
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Key Features
+##Key Features
 
     Multi-layer Delta architecture
     ADF pipeline orchestration
@@ -111,7 +111,7 @@ Key Features
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Data Quality & Validation
+##Data Quality & Validation
 
 The pipeline includes:
 
@@ -125,7 +125,7 @@ These reflect enterprise expectations for MDM data quality.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Analytics & Consumption
+##Analytics & Consumption
 
 The Gold layer supports:
 
@@ -138,7 +138,7 @@ The Gold layer supports:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Technology Stack
+##Technology Stack
 
     Azure Data Factory
     Pipelines
@@ -151,7 +151,8 @@ Technology Stack
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Repository Structure
+#Repository Structure
+
 ```yaml
 
 Enterprise MDM Data Engineering Pipeline
@@ -186,6 +187,6 @@ Enterprise MDM Data Engineering Pipeline
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-Notes on Collaboration
+## Final Note:
 
 This project reflects disciplined architectural decision-making, enterprise MDM principles, and production-aligned data engineering practices.
