@@ -1,8 +1,7 @@
 # Enterprise MDM Data Engineering Pipeline 
 
 ```yaml
-
-This project reflects disciplined architectural decision-making, enterprise MDM design, and production-aligned data engineering execution.
+From raw to analytics-ready: a production-aligned MDM pipeline built for reliability and governance.
 ```
 
 ## Bronze → Silver → Gold
