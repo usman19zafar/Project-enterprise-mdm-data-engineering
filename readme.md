@@ -38,7 +38,7 @@ This project demonstrates how to solve these challenges using a modern, governed
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-#Architecture:
+# Architecture:
 
 ## Bronze Layer — Raw Master Data
 
