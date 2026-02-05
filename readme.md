@@ -2,9 +2,7 @@
 
 ```yaml
 
-An combination of engineering and management effort built with clarity, discipline, and architectural rigor.
-This project reflects disciplined architectural decision-making, enterprise MDM principles, and production-aligned data engineering practices.
-
+This project reflects disciplined architectural decision-making, enterprise MDM design, and production-aligned data engineering execution.
 ```
 
 ## Bronze → Silver → Gold
