@@ -1,0 +1,96 @@
+{
+  "name": "mdm_master_pipeline",
+  "properties": {
+    "description": "Orchestrates the MDM Bronze → Silver → Gold transformation using Mapping Data Flows.",
+    "parameters": {
+      "load_date": {
+        "type": "String",
+        "defaultValue": "2026-01-01"
+      }
+    },
+    "activities": [
+      {
+        "name": "df_mdm_master_transform",
+        "type": "DataFlow",
+        "typeProperties": {
+          "dataflow": {
+            "referenceName": "df_mdm_master_transform",
+            "type": "DataFlowReference"
+          },
+          "parameters": {
+            "load_date": "@pipeline().parameters.load_date"
+          },
+          "compute": {
+            "coreCount": 8,
+            "computeType": "General"
+          }
+        }
+      }
+    ],
+    "annotations": [
+      "MDM",
+      "Bronze-Silver-Gold",
+      "ADF Mapping Data Flow"
+    ]
+  }
+}
+
+      },
+      {
+        "name": "log_success",
+        "type": "WebActivity",
+        "dependsOn": [
+          {
+            "activity": "df_mdm_master_transform",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "method": "POST",
+          "url": "https://example-logging-endpoint/success",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "pipeline": "p3_mdm_master_pipeline",
+            "status": "Succeeded",
+            "load_date": "@pipeline().parameters.load_date",
+            "timestamp": "@utcNow()"
+          }
+        }
+      },
+      {
+        "name": "log_failure",
+        "type": "WebActivity",
+        "dependsOn": [
+          {
+            "activity": "df_mdm_master_transform",
+            "dependencyConditions": [
+              "Failed"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "method": "POST",
+          "url": "https://example-logging-endpoint/failure",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "pipeline": "p3_mdm_master_pipeline",
+            "status": "Failed",
+            "load_date": "@pipeline().parameters.load_date",
+            "timestamp": "@utcNow()"
+          }
+        }
+      }
+    ],
+    "annotations": [
+      "MDM Pipeline",
+      "Bronze-Silver-Gold",
+      "ADF Mapping Data Flow"
+    ]
+  }
+}
