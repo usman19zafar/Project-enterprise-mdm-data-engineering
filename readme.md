@@ -164,9 +164,9 @@ Enterprise MDM Data Engineering Pipeline
 │
 ├── README.md
 ├── architecture/
-│   ├── high-level-architecture.png
-│   ├── dataflow-diagram.png
-│   └── layer-diagram.png
+│   ├── high-level-architecture.mmd
+│   ├── dataflow-diagram.mmd
+│   └── layer-diagram.mmd
 │
 ├── adf/
 │   ├── pipeline/
