@@ -1,0 +1,19 @@
+{
+  "name": "ds_orders_raw",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "ls_blob_storage",
+      "type": "LinkedServiceReference"
+    },
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "orders.csv",
+        "folderPath": "raw/orders/load_date=@{pipeline().parameters.load_date}"
+      },
+      "columnDelimiter": ",",
+      "firstRowAsHeader": true
+    }
+  }
+}

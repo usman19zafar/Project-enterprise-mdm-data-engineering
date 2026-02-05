@@ -1,0 +1,21 @@
+{
+  "name": "ds_customer_raw",
+  "properties": {
+    "linkedServiceName": {
+      "referenceName": "ls_blob_storage",
+      "type": "LinkedServiceReference"
+    },
+    "type": "DelimitedText",
+    "typeProperties": {
+      "location": {
+        "type": "AzureBlobStorageLocation",
+        "fileName": "customers.csv",
+        "folderPath": "raw/customers/load_date=@{pipeline().parameters.load_date}"
+      },
+      "columnDelimiter": ",",
+      "escapeChar": "\\",
+      "quoteChar": "\"",
+      "firstRowAsHeader": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "df_mdm_master_transform",
+  "properties": {
+    "type": "MappingDataFlow",
+    "typeProperties": {
+      "sources": [
+        {
+          "name": "src_customer",
+          "dataset": {
+            "referenceName": "ds_customer_raw",
+            "type": "DatasetReference"
+          }
+        },
+        {
+          "name": "src_product",
+          "dataset": {
+            "referenceName": "ds_product_raw",
+            "type": "DatasetReference"
+          }
+        },
+        {
+          "name": "src_orders",
+          "dataset": {
+            "referenceName": "ds_orders_raw",
+            "type": "DatasetReference"
+          }
+        }
+      ],
+      "sinks": [
+        {
+          "name": "sink_customer_clean",
+          "dataset": {
+            "referenceName": "ds_customer_clean",
+            "type": "DatasetReference"
+          }
+        },
+        {
+          "name": "sink_product_clean",
+          "dataset": {
+            "referenceName": "ds_product_clean",
+            "type": "DatasetReference"
+          }
+        },
+        {
+          "name": "sink_orders_clean",
+          "dataset": {
+            "referenceName": "ds_orders_clean",
+            "type": "DatasetReference"
+          }
+        }
+      ],
+      "script": "/* Mapping Data Flow script omitted for brevity in GitHub-safe version */"
+    }
+  }
+}
