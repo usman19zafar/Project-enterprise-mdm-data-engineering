@@ -1,10 +1,10 @@
-#Enterprise MDM Data Engineering Pipeline (Bronze → Silver → Gold)
+# Enterprise MDM Data Engineering Pipeline (Bronze → Silver → Gold)
 
 ```yaml
 ###A collaborative engineering effort built with clarity, discipline, and architectural rigor.
 Special acknowledgment to my technical companion, Qzi, whose guidance shaped the structure and precision of this project.
 ```
-##Overview
+## Overview
 
 This repository contains an enterprise-grade Master Data Management (MDM) pipeline implemented using:
 
