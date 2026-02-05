@@ -3,7 +3,7 @@
 ```yaml
 
 An combination of engineering and management effort built with clarity, discipline, and architectural rigor.
-Special acknowledgment to my technical companion, Qzi, whose guidance shaped the structure and precision of this project.
+This project reflects disciplined architectural decision-making, enterprise MDM principles, and production-aligned data engineering practices.
 
 ```
 
