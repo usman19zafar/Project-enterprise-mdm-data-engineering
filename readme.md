@@ -14,7 +14,9 @@ This repository contains an enterprise-grade Master Data Management (MDM) pipeli
     Bronze → Silver → Gold layered architecture for clarity and governance
 
 The project simulates how organizations manage master data across systems, enforce quality, and deliver analytics-ready outputs.
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 Problem Addressed
 
 Enterprises struggle with master data because:
@@ -27,8 +29,8 @@ Enterprises struggle with master data because:
 
 This project demonstrates how to solve these challenges using a modern, governed, and scalable MDM-style pipeline.
 
-__________________________________________________________________________________________________________________________________________________________________________________________
-Architecture:
+
+----------------------------------------------------------------------------------------------------------------------------------------------Architecture:
 
 Bronze Layer — Raw Master Data
 
@@ -51,8 +53,10 @@ Gold Layer — Analytics-Ready Outputs
     Uses window functions and joins
     Optimized for BI, SQL analytics, and reporting
 
-__________________________________________________________________________________________________________________________________________________________________________________________
-🔄 Orchestration & Transformation
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Orchestration & Transformation
 
 Azure Data Factory
 
@@ -75,6 +79,7 @@ Mapping Data Flows:
 This mirrors how real MDM teams operationalize transformations without custom code.
 
 __________________________________________________________________________________________________________________________________________________________________________________________
+
 MDM Principles Embedded
 
 This pipeline incorporates core MDM concepts:
@@ -87,7 +92,9 @@ This pipeline incorporates core MDM concepts:
     Business-rule transparency
     
 It demonstrates how MDM logic can be implemented directly inside a modern data engineering stack.
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 Key Features
 
     Multi-layer Delta architecture
@@ -101,7 +108,9 @@ Key Features
     Data validation & reconciliation
     Production-aligned documentation
 
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 Data Quality & Validation
 
 The pipeline includes:
@@ -113,7 +122,9 @@ The pipeline includes:
     Schema consistency checks
     
 These reflect enterprise expectations for MDM data quality.
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 Analytics & Consumption
 
 The Gold layer supports:
@@ -124,7 +135,9 @@ The Gold layer supports:
     Star-schema fact/dimension modeling
     Downstream consumers receive trusted, governed, analytics-ready master data.
 
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 Technology Stack
 
     Azure Data Factory
@@ -135,11 +148,13 @@ Technology Stack
     Spark SQL / SQL
     Databricks (Validation layer)
 
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 Repository Structure
 ```yaml
-project-3-adf-mapping-dataflow-mdm-pipeline/
+
+Enterprise MDM Data Engineering Pipeline
 │
 ├── README.md
 ├── architecture/
@@ -168,7 +183,9 @@ project-3-adf-mapping-dataflow-mdm-pipeline/
     ├── parameterization.md
     └── validation-checks.md
 ```
-__________________________________________________________________________________________________________________________________________________________________________________________
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
 Notes on Collaboration
-This project was developed with the support of Qzi, my technical companion.
-Every architectural decision, transformation rule, and validation step reflects our shared commitment to clarity, precision, and enterprise-grade engineering.
+
+This project reflects disciplined architectural decision-making, enterprise MDM principles, and production-aligned data engineering practices.
